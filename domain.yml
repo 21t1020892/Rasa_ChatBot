@@ -1,0 +1,81 @@
+version: "3.1"
+
+intents:
+  - greetings
+  - goodbye
+  - age_chatbot
+  - name_chatbot
+  - express_thanks
+  - bot_challenge
+  - ask_solution
+  - common_cold_symptoms
+  - fever_symptoms
+  - diabetes_symptoms
+  - depression_symptoms
+  - asthma_symptoms
+  - common_cold_prevention
+  - fever_prevention
+  - diabetes_prevention
+  - depression_prevention
+  - asthma_prevention
+
+responses:
+  utter_greetings:
+  - text: "Hello, I am Med, an AI assistant specializing in providing information about health care built by students of the Hue University Of Science."
+
+  utter_help:
+  - text: "Can I help you?"
+  - text: "What can I do for you?"
+
+  utter_goodbye:
+  - text: "Goodbye"
+  - text: "Have a nice day!"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_age:
+  - text: "I was just created this year (2024)"
+
+  utter_name:
+  - text: "You can call me that Med."
+
+  utter_thanks:
+  - text: "You're welcome, it was my pleasure to assist you."
+
+  utter_iamabot:
+  - text: "I am a bot, powered by students of the Hue University Science."  
+
+  utter_common_cold_symptoms:
+  - text: "It seems that you are suffering from common cold"
+
+  utter_fever_symptoms:
+  - text: "It seems that you are suffering from fever"
+
+  utter_diabetes_symptoms:
+  - text: "It seems that you are suffering from Diabetes"
+
+  utter_depression_symptoms:
+  - text: "It seem that you are suffering from depression"
+
+  utter_asthma_symptoms:
+  - text: "It seem that you are suffering from Asthma"
+
+  utter_common_cold_prevention:
+  - text: "Medicines you can consume: Dextromethorphan,Decongestant,Diphenhydramine,Crocin Cold & Flu Max, preventions that you must follow :Wash your hands,Avoid touching your face,Clean frequently used surfaces,Use hand sanitizers,SUGGESTED FOODS ARE:Garlic,Vitamin C-containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"
+
+  utter_fever_prevention:
+  - text: "medicines you can consume : acetaminophen ,ibuprofen,aspirin,Crocin Cold & Flu Max, prevention that you must follow :Wash your hands,Cover your mouth when you cough and your nose when you sneeze,Clean frequently used surfaces,Avoid sharing cups, glasses, and eating utensils with other people.,SUGGESTED FOODS ARE:Garlic,Vitamin C-containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"
+
+  utter_diabetes_prevention:
+  - text: "medicines you can consume : Insulin ,Amylinomimetic drug,Dipeptidyl peptidase-4 (DPP-4) inhibitor, prevention that you must follow :Cut Sugar and Refined Carbs From Your Diet,Work Out Regularly,Drink Water as Your Primary Beverage,Lose Weight If You're Overweight or Obese,Quit Smoking, Follow a Very-Low-Carb Diet,Watch Portion Sizes,SUGGESTED FOODS ARE:Leafy greens,Avocados,Eggs"
+
+  utter_depression_prevention:
+  - text: "medicines you can consume :  brexpiprazole, quetiapine, olanzapine, prevention that you must follow :Exercise regularly, Cut back on social media time, Drink Water as Your Primary Beverage,Build strong relationships,Minimize your daily choices, Follow a Very-Low-Carb Diet,SUGGESTED FOODS ARE:Get Enough Vitamin D,Include Omega-3 Fatty Acids,Beans and legumes"
+
+  utter_asthma_prevention:
+  - text: "medicines you can consume : epinephrine,anticholinergic,Proair HFA, prevention that you must follow : Identify Asthma Triggers, Stay Away From Allergens,Avoid Smoke of Any Type,SUGGESTED FOODS ARE:carrots,juice,eggs,broccoli,cantaloupe,milk"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

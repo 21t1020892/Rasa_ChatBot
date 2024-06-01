@@ -1,0 +1,161 @@
+version: "3.1"
+
+nlu:
+- intent: greetings
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good day
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - greetings
+    - what's up?
+    - how is it giong
+
+- intent: goodbye
+  examples: |
+    - cya
+    - good bye
+    - see you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - have a good day
+    - see you around
+    - bye bye
+    - see ya
+
+- intent: express_thanks
+  examples: |
+    - thanks
+    - thank you
+    - many thanks
+    - appreciate it  
+
+- intent: age_chatbot
+  examples: |
+    - how old
+    - how old are you?
+    - what is your age
+    - how old are you
+    - age?
+
+
+- intent: name_chatbot
+  examples: |
+    - what is your name?
+    - what should i call you
+    - what's your name?
+    - who are you?
+    - can you tell me your name?
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_solution
+  examples: |
+    - what are my options for treatment?
+    - What I need to do?
+    - How to recover from illness?
+    - Please help me treat it
+
+
+- intent: common_cold_symptoms
+  examples: |
+    - Runny or stuffy nose
+    - Sore throat
+    - Cough
+    - Congestion
+    - Slight body aches or a mild headache
+    - Sneezing
+    - Low-grade fever
+    - Generally feeling unwell (malaise)
+
+- intent: fever_symptoms
+  examples: |
+    - Sweating
+    - Chills and shivering
+    - Headache
+    - Muscle aches
+    - Loss of appetite
+    - Irritability
+    - Dehydration
+    - General weakness
+
+- intent: diabetes_symptoms
+  examples: |
+    - increased hunger
+    - increased thirst
+    - weight loss
+    - frequent urination
+    - blurry vision
+    - extreme fatigue
+
+- intent: depression_symptoms
+  examples: |
+    - Hopeless outlook
+    - Lost interest
+    - Increased fatigue
+    - sleep problem
+    - Anxiety
+    - change in weight
+    - Looking at death
+
+- intent: asthma_symptoms
+  examples: |
+    - coughing
+    - tightness in the chest
+    - shortness of breath
+    - difficulty talking
+    - panic
+    - fatigue
+
+- intent: common_cold_prevention
+  examples: |
+    - What medicines can I buy to help me with my common cold?
+    - tell me some prevention method from common cold
+    - What should I eat or drink if i am suffering from common cold?
+    - How can I keep from getting a cold or the flu?
+
+- intent: fever_prevention
+  examples: |
+    - What medicines can I buy to help me with my fever?
+    - tell me some prevention method from fever
+    - What should I eat or drink if i am suffering from fever?
+    - How can I keep from getting a fever?
+
+- intent: diabetes_prevention
+  examples: |
+    - What medicines can I buy to help me with my diabetes?
+    - tell me some prevention method from diabetes
+    - What should I eat or drink if i am suffering from diabetes?
+    - How can I keep from getting diabetes?
+
+- intent: depression_prevention
+  examples: |
+    - What medicines can I buy to help me with my depression?
+    - tell me some prevention method from depression
+    - What should I eat or drink if i am suffering from depression?
+    - How can I keep from getting depression?
+
+- intent: asthma_prevention
+  examples: |
+    - What medicines can I buy to help me with my asthma?
+    - tell me some prevention method from asthma
+    - What should I eat or drink if i am suffering from asthma?
+    - How can I keep from getting asthma?
+
