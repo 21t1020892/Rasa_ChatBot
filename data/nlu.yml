@@ -7,10 +7,8 @@ nlu:
     - hello
     - hi
     - hello there
-    - good day
     - good morning
     - good evening
-    - moin
     - hey there
     - let's go
     - hey dude
@@ -19,30 +17,23 @@ nlu:
     - good afternoon
     - greetings
     - what's up?
-    - how is it giong
+    - how is it going
 
 - intent: goodbye
   examples: |
-    - cya
-    - good bye
-    - see you later
+    - cu
+    - good by
+    - cee you later
     - good night
     - bye
+    - see ya
     - goodbye
     - have a nice day
-    - have a good day
     - see you around
     - bye bye
-    - see ya
+    - see you later
 
-- intent: express_thanks
-  examples: |
-    - thanks
-    - thank you
-    - many thanks
-    - appreciate it  
-
-- intent: age_chatbot
+- intent: age
   examples: |
     - how old
     - how old are you?
@@ -50,40 +41,42 @@ nlu:
     - how old are you
     - age?
 
-
-- intent: name_chatbot
+- intent: name
   examples: |
-    - what is your name?
+    - what is your name
     - what should i call you
     - what's your name?
     - who are you?
-    - can you tell me your name?
+    - can you tell me your name
 
-- intent: bot_challenge
+- intent: agree
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - thanks
+    - thank you
+    - the above information is really helpful
+    - you help me
 
-- intent: ask_solution
+- intent: disagree
   examples: |
-    - what are my options for treatment?
-    - What I need to do?
-    - How to recover from illness?
-    - Please help me treat it
-
+    - that is not what I meant
+    - you answered wrong
+    - wrong
+    - it is not true
+    - the above information does not help me
 
 - intent: common_cold_symptoms
   examples: |
     - Runny or stuffy nose
     - Sore throat
-    - Cough
+    - Cough",
     - Congestion
     - Slight body aches or a mild headache
     - Sneezing
     - Low-grade fever
-    - Generally feeling unwell (malaise)
+    - Generally feeling unwell
+- synonym: unwell
+  examples: |
+    - malaise
 
 - intent: fever_symptoms
   examples: |
@@ -152,6 +145,7 @@ nlu:
     - What should I eat or drink if i am suffering from depression?
     - How can I keep from getting depression?
 
+
 - intent: asthma_prevention
   examples: |
     - What medicines can I buy to help me with my asthma?
@@ -159,3 +153,454 @@ nlu:
     - What should I eat or drink if i am suffering from asthma?
     - How can I keep from getting asthma?
 
+- intent: exercise_recommendation
+  examples: |
+    - Best exercises for weight loss
+    - Exercises to improve flexibility
+    - Strength training routines
+    - Cardio workouts
+
+- intent: nutrition_advice
+  examples: |
+    - Healthy snacks ideas
+    - Low-calorie meal recipes
+    - Vegan diet tips
+    - Gluten-free eating
+
+- intent: sleep_health
+  examples: |
+    - How to improve sleep quality
+    - Dealing with insomnia
+    - Ideal sleep duration
+    - Creating a bedtime routine
+
+- intent: holistic_health
+  examples: |
+    - Benefits of meditation
+    - Practicing mindfulness
+    - Natural remedies for common ailments
+    - Holistic wellness practices
+
+- intent: travel_health
+  examples: |
+    - Travel vaccinations
+    - Jet lag remedies
+    - Staying healthy while traveling
+    - Travel insurance advice
+
+- intent: first_aid
+  examples: |
+    - Basic first aid techniques
+    - Dealing with minor burns/cuts
+    - CPR instructions
+    - Recognizing signs of a stroke or heart attack
+
+- intent: aging_health
+  examples: |
+    - Healthy aging tips
+    - Managing arthritis in old age
+    - Cognitive exercises for seniors
+    - Preventing falls in the elderly
+
+- intent: sexual_health
+  examples: |
+    - Safe sex practices
+    - STD prevention
+    - Importance of regular check-ups
+    - Handling sexual health concerns
+    - Sexual health screenings
+    - Birth control options
+    - STI prevention
+    - Counseling for sexual health concerns
+
+- intent: home_remedies
+  examples: |
+    - Home remedies for sore throat
+    - Natural remedies for allergies
+    - DIY face masks for skin care
+    - Herbal teas for relaxation
+
+- intent: stress_management
+  examples: |
+    - Stress relief techniques
+    - Mind-body relaxation methods
+    - Healthy coping mechanisms
+    - Workplace stress management
+
+- intent: allergies
+  examples: |
+    - Common allergens
+    - Symptoms of allergies
+    - How to manage allergies
+    - Allergy testing
+
+- intent: pregnancy
+  examples: |
+    - Pregnancy symptoms
+    - Prenatal care
+    - What to eat during pregnancy
+    - Labor and delivery
+
+- intent: child_health
+  examples: |
+    - Childhood vaccinations
+    - Healthy diet for kids
+    - Childhood illnesses
+    - Parenting tips
+
+- intent: elderly_care
+  examples: |
+    - Elderly care services
+    - Managing chronic conditions in elderly
+    - Fall prevention tips
+    - Caring for aging parents
+
+- intent: mental_health_support
+  examples: |
+    - Online therapy options
+    - Mental health hotlines
+    - Self-help techniques for anxiety or depression
+    - Coping with stress
+
+- intent: rehabilitation
+  examples: |
+    - Post-surgery rehabilitation
+    - Recovery exercises
+    - Physical therapy benefits
+    - Choosing a rehabilitation center
+
+- intent: substance_abuse
+  examples: |
+    - Substance abuse treatment options
+    - Support groups for addiction
+    - Counseling for substance abuse
+    - Signs of substance abuse
+
+- intent: chronic_conditions
+  examples: |
+    - Managing diabetes
+    - Coping with cancer treatments
+    - Living with arthritis
+    - Heart disease management
+
+- intent: dental_care
+  examples: |
+    - Dental hygiene tips
+    - Common dental problems
+    - Choosing a dentist
+    - Importance of regular dental check-ups
+
+- intent: emergency
+  examples: |
+    - I need urgent help
+    - Emergency assistance
+    - Call an ambulance
+    - I'm having a medical emergency
+
+- intent: medication
+  examples: |
+    - What is medication used for?
+    - Dosage of medication
+    - Side effects of medication
+    - Can I take medication with another medication?
+
+- intent: appointment
+  examples: |
+    - How can I book an appointment?
+    - Schedule a doctor's appointment
+    - Availability of doctors
+    - Book a consultation
+
+- intent: insurance
+  examples: |
+    - How does health insurance work?
+    - What does my insurance cover?
+    - Find health insurance plans
+    - Insurance policy details
+
+- intent: mental_health
+  examples: |
+    - I feel anxious
+    - I'm stressed out
+    - Dealing with depression
+    - Need someone to talk to
+
+- intent: diet_nutrition
+  examples: |
+    - What's a balanced diet?
+    - Healthy eating tips
+    - Nutrition advice
+    - Diet for specific condition
+
+- intent: exercise
+  examples: |
+    - Best exercises for specific condition
+    - How often should I exercise?
+    - Exercise routines
+    - Fitness tips
+
+- intent: vaccination
+  examples: |
+    - Vaccination schedule
+    - Where can I get vaccinated?
+    - Vaccine information
+    - Vaccines for adults/children
+
+- intent: insurance_claim
+  examples: |
+    - How to file a health insurance claim?
+    - Claim process
+    - Required documents for insurance claim
+    - Claim status
+
+- intent: self_care_tips
+  examples: |
+    - Self-care ideas
+    - Relaxation techniques
+    - Mindfulness exercises
+    - Managing stress at home
+
+- intent: nutrition_labels
+  examples: |
+    - How to read nutrition labels
+    - Understanding food labels
+    - Interpreting ingredient lists
+    - Healthy food choices
+
+- intent: sleep_disorders
+  examples: |
+    - Symptoms of sleep disorders
+    - Treatment for insomnia
+    - Dealing with sleep apnea
+    - Improving sleep quality
+
+- intent: immune_system
+  examples: |
+    - Boosting the immune system
+    - Foods that strengthen immunity
+    - Regular exercise and immunity
+    - Getting enough sleep for a healthy immune system
+
+- intent: exercise_injuries
+  examples: |
+    - Preventing exercise-related injuries
+    - Treating muscle strains
+    - Dealing with joint pain
+    - Recovering from sports injuries
+
+- intent: weight_management
+  examples: |
+    - Healthy weight loss strategies
+    - Maintaining a healthy weight
+    - Understanding body mass index (BMI)
+    - Weight gain causes and prevention
+
+- intent: digital_health
+  examples: |
+    - Using health apps
+    - Benefits of wearable devices
+    - Virtual doctor visits
+    - Online fitness programs
+
+- intent: menstrual_health
+  examples: |
+    - Managing menstrual cramps
+    - Healthy menstrual hygiene practices
+    - Irregular menstrual cycles
+    - PMS symptoms and remedies
+
+- intent: organ_donation
+  examples: |
+    - Importance of organ donation
+    - How to become an organ donor
+    - Common myths about organ donation
+    - Organ transplant process
+
+- intent: caregiver_support
+  examples: |
+    - Support for caregivers
+    - Managing caregiver stress
+    - Respite care options
+    - Legal and financial resources for caregivers
+
+- intent: reproductive_health
+  examples: |
+    - Fertility awareness methods
+    - Contraception options
+    - Reproductive health screenings
+    - Dealing with infertility
+
+- intent: addiction_recovery
+  examples: |
+    - Support for addiction recovery
+    - 12-step programs
+    - Therapies for addiction
+    - Relapse prevention strategies
+
+- intent: caregiving_tips
+  examples: |
+    - Caring for loved ones with dementia
+    - Effective communication with seniors
+    - Assistive devices for elderly
+    - Managing challenging behaviors in patients
+
+- intent: cancer_support
+  examples: |
+    - Cancer support groups
+    - Coping with chemotherapy side effects
+    - Cancer prevention tips
+    - Support for cancer caregivers
+
+- intent: nutrition_for_athletes
+  examples: |
+    - Nutrition for athletes
+    - Pre-workout meals
+    - Post-workout recovery foods
+    - Hydration tips for athletes
+
+- intent: youth_health
+  examples: |
+    - Teenage health issues
+    - Healthy habits for adolescents
+    - Teen mental health
+    - Substance abuse prevention in youth
+
+- intent: disease_prevention
+  examples: |
+    - Preventing common diseases
+    - Immunization schedules for children
+    - Preventing the spread of infectious diseases
+    - Travel health precautions
+
+- intent: vision_care
+  examples: |
+    - Eye care tips
+    - Common eye problems
+    - Choosing the right glasses or contact lenses
+    - Eye safety precautions
+
+- intent: skin_care
+  examples: |
+    - Skin care routines
+    - Dealing with acne
+    - Sun protection tips
+    - Common skin conditions
+
+- intent: elderly_nutrition
+  examples: |
+    - Nutrition for seniors
+    - Managing appetite in the elderly
+    - Elderly-friendly meal ideas
+    - Dietary supplements for older adults
+
+- intent: teen_nutrition
+  examples: |
+    - Healthy eating for teens
+    - Balanced diet for adolescents
+    - Dealing with body image issues
+    - Encouraging positive eating habits
+
+- intent: cognitive_health
+  examples: |
+    - Cognitive exercises for brain health
+    - Memory improvement techniques
+    - Preventing cognitive decline
+    - Brain-boosting foods
+
+- intent: dental_health
+  examples: |
+    - Caring for dental implants
+    - Oral hygiene for braces wearers
+    - Dealing with tooth sensitivity
+    - Choosing the right toothpaste
+
+- intent: heart_health
+  examples: |
+    - Maintaining heart health
+    - Heart-healthy diets
+    - Exercises for a healthy heart
+    - Blood pressure management
+
+- intent: physical_therapy
+  examples: |
+    - Benefits of physical therapy
+    - Exercises for common injuries
+    - Rehabilitation after surgery
+    - Choosing the right physical therapist
+
+- intent: nutrition_supplements
+  examples: |
+    - Benefits of dietary supplements
+    - Choosing the right supplements
+    - Vitamins and minerals for specific health needs
+    - Supplement interactions with medications
+
+- intent: mindful_eating
+  examples: |
+    - Practicing mindful eating
+    - Mindful eating exercises
+    - Listening to body cues for hunger and fullness
+    - Avoiding emotional eating
+
+- intent: gut_health
+  examples: |
+    - Maintaining gut health
+    - Foods for a healthy gut
+    - Probiotics and prebiotics
+    - Dealing with digestive issues
+
+- intent: women_health
+  examples: |
+    - Women's health screenings
+    - Managing menstrual irregularities
+    - Postmenopausal health
+    - Breast health and self-exams
+
+- intent: nutrition_myths
+  examples: |
+    - Common nutrition myths debunked
+    - Misconceptions about diet and exercise
+    - Food myths and facts
+    - Healthy eating truths
+
+- intent: lifestyle_changes
+  examples: |
+    - Making sustainable lifestyle changes
+    - Setting realistic health goals
+    - Staying motivated for exercise
+    - Building healthy habits
+
+- intent: child_nutrition
+  examples: |
+    - Nutrition for picky eaters
+    - Healthy school lunch ideas
+    - Balanced snacks for kids
+    - Preventing childhood obesity
+
+- intent: mind_body_connection
+  examples: |
+    - Mind-body connection in health
+    - Benefits of meditation and yoga
+    - Emotional stress and physical health
+    - Positive thinking and its impact on well-being
+
+- intent: fitness_motivation
+  examples: |
+    - Staying motivated for fitness
+    - Overcoming workout plateaus
+    - Finding joy in physical activity
+    - Creating a supportive fitness environment
+
+- intent: mindfulness_meditation
+  examples: |
+    - Introduction to mindfulness meditation
+    - Practicing mindful breathing
+    - Body scan meditation
+    - Mindful eating meditation
+
+- intent: aging_gracefully
+  examples: |
+    - Aging gracefully tips
+    - Maintaining mental agility in old age
+    - Embracing the aging process
+    - Finding purpose and joy in later years
