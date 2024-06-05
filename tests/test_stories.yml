@@ -2,90 +2,182 @@
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
 stories:
-- story: happy path 1
+- story: exercises
   steps:
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
+      Simple exercises for beginners
+    intent: exercise
+  - action: utter_exercise
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
-
-- story: happy path 2
-  steps:
+      If I have an injury, are there any exercises that are suitable for me?
+    intent: physical_therapy
+  - action: utter_physical_therapy
+  - action: utter_end_advice
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
-  - user: |
-      bye-bye!
+      bye
     intent: goodbye
   - action: utter_goodbye
 
-- story: sad path 1
+- story: stress
   steps:
   - user: |
-      hello
-    intent: greet
-  - action: utter_greet
+      What do I do if I'm worried about my mental health?
+    intent: mental_health_support
+  - action: utter_mental_health_support
   - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
+      How do i handle stressful situations?
+    intent: self_care_tips
+  - action: utter_self_care_tips
+  - action: utter_end_advice
 
-- story: sad path 2
+- story: Nutrition
   steps:
   - user: |
-      hello
-    intent: greet
-  - action: utter_greet
+      Diet for athletes
+    intent: nutrition_for_athletes
+  - action: utter_nutrition_for_athletes
   - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+      Nutritional diet for athletes
+    intent: diet_nutrition
+  - action: utter_diet_nutrition
   - user: |
-      not really
-    intent: deny
-  - action: utter_goodbye
+      Are supplements the best source of nutrients?
+    intent: nutrition_supplements
+  - action: utter_nutrition_supplements
+  - action: utter_end_advice
 
-- story: sad path 3
+- story: body_1
   steps:
   - user: |
-      hi
-    intent: greet
-  - action: utter_greet
+      Hi Chatbot, I'm not feeling well.
+    intent: greetings
+  - action: utter_greetings
   - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+      I've been sneezing a lot, have a runny nose, and a sore throat.
+    intent: common_cold_symptoms
+  - action: utter_common_cold_symptoms
   - user: |
-      no
-    intent: deny
-  - action: utter_goodbye
+      Is there anything I can eat or do to help relieve a cold?
+    intent: common cold prevention
+  - action: utter_common cold prevention
+  - action: utter_end_advice
 
-- story: say goodbye
+- story: body_2
   steps:
   - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+      I feel very hot and cold at the same time, my skin is flushed, and I feel tired and achy all over.
+    intent: fever_symptoms
+  - action: utter_fever_symptoms
+  - user: |
+      I need a medicine to reduce fever
+    intent: fever_prevention
+  - action: utter_fever_prevention
+  - action: utter_end_advice
 
-- story: bot challenge
+- story: body_3
   steps:
   - user: |
-      are you a bot?
-    intent: bot_challenge
-  - action: utter_iamabot
+      I've been feeling really thirsty and tired lately.
+    intent: diabetes_symptoms
+  - action: utter_diabetes_symptoms
+  - user: |
+      Can you give me some methods or medicine to reduce diabetes?
+    intent: diabetes_prevention
+  - action: utter_diabetes_prevention
+  - action: utter_end_advice
+
+- story: body_4
+  steps:
+  - user: |
+      I've been feeling down and tired all day. 
+    intent: depression_symptoms
+  - action: utter_depression_symptoms
+  - user: |
+      How can I get rid of depression?
+    intent: depression_prevention
+  - action: utter_depression_prevention
+  - action: utter_end_advice
+
+- story: body_5
+  steps:
+  - user: |
+      Sometimes I cough and feel chest tightness, is there something wrong with me?
+    intent: asthma_symptoms
+  - action: utter_asthma_symptoms
+  - user: |
+      Is there any way to cure asthma?
+    intent: asthma_prevention
+  - action: utter_asthma_prevention
+  - action: utter_end_advice
+
+- story: body_6
+  steps:
+  - user: |
+      I 70kg need some of the best exercises to lose weight
+    intent: exercise_recommendation
+  - action: utter_exercise_recommendation
+  - user: |
+      I need vegetarian tips to help me lose weight faster 
+    intent: nutrition_advice
+  - action: utter_nutrition_advice
+  - action: utter_end_advice
+
+- story: body_7
+  steps:
+  - user: |
+      I've been working a bit stressed lately, needing some methods to relax 
+    intent: stress_management
+  - action: utter_stress_management
+  - user: |
+      I need to schedule a word consultation to alleviate stress
+    intent: appointment
+  - action: utter_appointment
+  - action: utter_end_advice
+
+- story: body_8
+  steps:
+  - user: |
+      Can you tell me the pregnancy symptoms?
+    intent: pregnancy
+  - action: utter_pregnancy
+  - user: |
+      Tell me the best parenting tips?
+    intent: child_health
+  - action: utter_child_health
+  - user: |
+      Can you give me recovery exercises after childbirth?
+    intent: physical_therapy
+  - action: utter_physical_therapy
+  - user: |
+      Can you tell me the details of my health insurance policy for childbirth?
+    intent: insurance
+  - action: utter_insurance
+  - action: utter_end_advice
+
+- story: body_9
+  steps:
+  - user: |
+      Can you give me the best exercise for sportspeople?
+    intent: exercise
+  - action: utter_exercise
+  - user: |
+      Can you give nutritional advice to exercisers?
+    intent: diet_nutrition
+  - action: utter_exercise_diet_nutrition
+  - user: |
+      I still don't understand food labels, can you help me?
+    intent: nutrition_labels
+  - action: utter_nutrition_labels
+  - action: utter_end_advice
+
+- story: body_10
+  steps:
+  - user: |
+      I have insomnia already, do you have a treatment for my insomnia?
+    intent: sleep_disorders
+  - action: utter_sleep_disorders
+  - user: |
+      Can you come up with ways to improve sleep quality?
+    intent: sleep_health
+  - action: utter_sleep_health
+  - action: utter_end_advice
