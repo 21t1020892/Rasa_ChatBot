@@ -64,11 +64,66 @@ nlu:
     - it is not true
     - the above information does not help me
 
+- intent: more_information
+  examples: |
+    - what is this?
+    - what disease is that?
+    - Give me more information about this
+
+- intent: ask_solution
+  examples: |
+    - please help me solve it
+    - what I need to do
+    - please give me more information to prevent it
+    - what do I need to do to get better?
+    - what do I need to do to feel better?
+
+- intent: possibilities
+  examples: |
+    - what can you do?
+    - what possibilities do you have?
+    - what can I ask you?
+
+- intent: common_cold_define
+  examples: |
+    - What is the common cold
+    - common cold
+    - symptoms of the common cold
+    - common cold can end within how many days?
+
+- intent: fever_define
+  examples: |
+    - What is the fever
+    - fever
+    - symptoms of the fever
+    - fever can end within how many days?
+
+- intent: diabetes_define
+  examples: |
+    - What is the diabetes
+    - diabetes
+    - symptoms of the diabetes
+    - diabetes can end within how many days?
+
+- intent: depression_define
+  examples: |
+    - What is the depression
+    - depression
+    - symptoms of the depression
+    - depression can end within how many days?
+
+- intent: asthma_define
+  examples: |
+    - What is the asthma?
+    - asthma
+    - symptoms of the asthma
+    - asthma can end within how many days?
+
 - intent: common_cold_symptoms
   examples: |
     - Runny or stuffy nose
     - Sore throat
-    - Cough",
+    - Cough,
     - Congestion
     - Slight body aches or a mild headache
     - Sneezing

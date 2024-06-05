@@ -41,6 +41,171 @@ stories:
   - intent: greetings
   - action: utter_joke
 
+- story: story 1.1 common cold
+  steps:
+  - intent: common_cold_symptoms
+  - action: utter_common_cold_symptoms
+  - or:
+    - intent: common_cold_define
+    - intent: more_information
+  - action: utter_common_cold_define
+  - or:
+    - intent: common_cold_prevention
+    - intent: ask_solution
+  - action: utter_common_cold_prevention
+  - action: utter_end_advice
+
+- story: story 1.2 fever
+  steps:
+  - intent: fever_symptoms
+  - action: utter_fever_symptoms
+  - or:
+    - intent: fever_define
+    - intent: more_information
+  - action: utter_fever_define
+  - or:
+    - intent: fever_prevention
+    - intent: ask_solution
+  - action: utter_fever_prevention
+  - action: utter_end_advice
+
+- story: story 1.3 diabetes symptoms
+  steps:
+  - intent: diabetes_symptoms
+  - action: utter_diabetes_symptoms
+  - or:
+    - intent: diabetes_define
+    - intent: more_information
+  - action: utter_diabetes_define
+  - or:
+    - intent: diabetes_prevention
+    - intent: ask_solution
+  - action: utter_diabetes_prevention
+  - action: utter_end_advice
+
+- story: story 1.4 depression symptoms
+  steps:
+  - intent: depression_symptoms
+  - action: utter_depression_symptoms
+  - or:
+    - intent: depression_define
+    - intent: more_information
+  - action: utter_depression_define
+  - or:
+    - intent: depression_prevention
+    - intent: ask_solution
+  - action: utter_depression_prevention
+  - action: utter_end_advice
+
+- story: story 1.5 asthma symptoms
+  steps:
+  - intent: asthma_symptoms
+  - action: utter_asthma_symptoms
+  - or:
+    - intent: asthma_define
+    - intent: more_information
+  - action: utter_asthma_define
+  - or:
+    - intent: asthma_prevention
+    - intent: ask_solution
+  - action: utter_asthma_prevention
+  - action: utter_end_advice
+
+- story: story 2.1 common cold
+  steps:
+  - intent: common_cold_symptoms
+  - action: utter_common_cold_symptoms
+  - or:
+    - intent: common_cold_prevention
+    - intent: ask_solution
+  - action: utter_common_cold_prevention
+  - action: utter_end_advice
+  - or:
+    - intent: common_cold_define
+    - intent: more_information
+  - action: utter_common_cold_define
+  
+- story: story 2.2 fever
+  steps:
+  - intent: fever_symptoms
+  - action: utter_fever_symptoms
+  - or:
+    - intent: fever_prevention
+    - intent: ask_solution
+  - action: utter_fever_prevention
+  - action: utter_end_advice
+  - or:
+    - intent: fever_define
+    - intent: more_information
+  - action: utter_fever_define
+  
+- story: story 2.3 diabetes symptoms
+  steps:
+  - intent: diabetes_symptoms
+  - action: utter_diabetes_symptoms
+  - or:
+    - intent: diabetes_prevention
+    - intent: ask_solution
+  - action: utter_diabetes_prevention
+  - action: utter_end_advice
+  - or:
+    - intent: diabetes_define
+    - intent: more_information
+  - action: utter_diabetes_define
+
+- story: story 2.4 depression symptoms
+  steps:
+  - intent: depression_symptoms
+  - action: utter_depression_symptoms
+  - or:
+    - intent: depression_prevention
+    - intent: ask_solution
+  - action: utter_depression_prevention
+  - action: utter_end_advice
+  - or:
+    - intent: depression_define
+    - intent: more_information
+  - action: utter_depression_define
+
+- story: story 2.5 asthma symptoms
+  steps:
+  - intent: asthma_symptoms
+  - action: utter_asthma_symptoms
+  - or:
+    - intent: asthma_prevention
+    - intent: ask_solution
+  - action: utter_asthma_prevention
+  - action: utter_end_advice
+  - or:
+    - intent: asthma_define
+    - intent: more_information
+  - action: utter_asthma_define
+
+- story: common cold define
+  steps: 
+  - intent: common_cold_define
+  - action: utter_common_cold_define
+
+- story: fever define
+  steps: 
+  - intent: fever_define
+  - action: utter_fever_define
+
+- story: diabetes define
+  steps: 
+  - intent: diabetes_define
+  - action: utter_diabetes_define
+
+- story: depression define
+  steps: 
+  - intent: depression_define
+  - action: utter_depression_define
+
+- story: asthma define
+  steps: 
+  - intent: asthma_define
+  - action: utter_asthma_define
+
 - story: common cold symptoms
   steps:
   - intent: common_cold_symptoms
