@@ -7,6 +7,14 @@ intents:
   - name
   - agree
   - disagree
+  - more_information
+  - ask_solution
+  - possibilities
+  - common_cold_define
+  - fever_define
+  - diabetes_define
+  - depression_define
+  - asthma_define
   - common_cold_symptoms
   - fever_symptoms
   - diabetes_symptoms
@@ -115,6 +123,33 @@ responses:
   - text: "Hope the above information can help you 😊."
   - text: "I trust that the information provided will be of assistance to you 😊."
   - text: "If you have any further questions or need additional clarification, please don't hesitate to ask 🙌."
+
+  utter_out_of_scope:
+  - text: "I was create to answer your questions about health care in English. Sorry for not begin able to answer your questions. 🥺"
+
+  utter_common_cold_define:
+  - text: "The common cold is a mild infection of your upper respiratory tract, affecting your nose and throat. It's caused by viruses, most commonly rhinoviruses. Symptoms include a runny or stuffy nose, sore throat, cough, sneezing, and generally feeling unwell. Most people recover within 7 to 10 days, but symptoms may last longer in smokers. If you experience worsening symptoms, fever, or other concerning signs, consider seeking medical care."
+
+  utter_fever_define:
+  - text: "A fever is a temporary rise in body temperature. It's usually caused by an infection and is part of the body's immune response. While the myth of a “normal” body temperature being 98.6°F persists, the reality is that a healthy temperature can range from 97°F to 99°F. If you feel sick or suspect exposure to illnesses like COVID-19, it's essential to monitor your temperature. Remember, a thermometer is the most reliable way to check for a fever"
+
+  utter_diabetes_define:
+  - text: "Diabetes is a chronic condition where your blood sugar (glucose) levels are too high. It occurs due to problems with insulin, a hormone that helps regulate blood sugar."
+
+  utter_depression_define:
+  - text: "Depression is a mood disorder that causes persistent feelings of sadness and loss of interest. Also known as major depressive disorder or clinical depression, it affects how you feel, think, and behave. Symptoms include: Feelings of sadness, hopelessness, or emptiness, Irritability or frustration.... Remember, depression isn't a sign of weakness, and seeking help is essential. Treatment options include medication, psychotherapy, or a combination of both. If you or someone you know is struggling, consider reaching out to a healthcare professional for support."
+
+  utter_asthma_define:
+  - text: "Asthma is a chronic lung disease that affects people of all ages. It is characterized by inflammation and muscle tightening around the airways, making it harder to breathe. Common symptoms include coughing, wheezing, shortness of breath, and chest tightness."
+
+  utter_possibilities:
+  - text: |
+      Try asking the following questions and I will answer them:
+      - Common diseases
+      - Health care for children, elderly or pregnant women
+      - Nutritional regimes
+      - Stress, mental health
+      - Sleep problems
 
   utter_common_cold_symptoms:
   - text: "It seems that you are suffering from Common cold."
