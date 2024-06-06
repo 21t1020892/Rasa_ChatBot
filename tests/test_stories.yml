@@ -12,7 +12,6 @@ stories:
       If I have an injury, are there any exercises that are suitable for me?
     intent: physical_therapy
   - action: utter_physical_therapy
-  - action: utter_end_advice
   - user: |
       bye
     intent: goodbye
@@ -28,7 +27,6 @@ stories:
       How do i handle stressful situations?
     intent: self_care_tips
   - action: utter_self_care_tips
-  - action: utter_end_advice
 
 - story: Nutrition
   steps:
@@ -44,7 +42,120 @@ stories:
       Are supplements the best source of nutrients?
     intent: nutrition_supplements
   - action: utter_nutrition_supplements
-  - action: utter_end_advice
+
+- story: mindful
+  steps:
+  - user: |
+      I am practicing mindful eating, can you give me some advice?
+    intent: mindful_eating
+  - action: utter_mindful_eating
+  - user: |
+      How about mindful eating meditation?
+    intent: mindfulness_meditation
+  - action: utter_mindfulness_meditation
+  - user: |
+      It sounds like the mind and body are connected, tell me about that.
+    intent: mind_body_connection
+  - action: utter_mind_body_connection
+
+- story: care
+  steps:
+  - user: |
+      What is respite care options?
+    intent: caregiver_support
+  - action: utter_caregiver_support
+  - user: |
+      Tel me some caregiving tip.
+    intent: caregiving_tips
+  - action: utter_caregiving_tips
+  - user: |
+      How to manage aging parents?
+    intent: elderly_care
+  - action: utter_elderly_care
+
+- story: health_1
+  steps:
+  - user: |
+      How can i healthy menstrual hygiene practices?
+    intent: menstrual_health
+  - action: utter_menstrual_health
+
+- story: health_2
+  steps:
+  - user: |
+      What is the best way to protect from the sun?
+    intent: skin_care
+  - action: utter_skin_care
+
+- story: health_3
+  steps:
+  - user: |
+      Tell me about vaccine schedule?
+    intent: vaccination
+  - action: utter_vaccination
+
+- story: health_4
+  steps:
+  - user: |
+      What are the benefits wearable devices?
+    intent: digital_health
+  - action: utter_digital_health
+
+- story: health_5
+  steps:
+  - user: |
+      What are the best methods for fertility awareness?
+    intent: reproductive_health
+  - action: utter_reproductive_health
+
+- story: health_6
+  steps:
+  - user: |
+      What skills are support for addiction recovery?
+    intent: addiction_recovery
+  - action: utter_addiction_recovery
+
+- story: health_7
+  steps:
+  - user: |
+      What support is there for cancer patients?
+    intent: digital_health
+  - action: utter_digital_health
+
+- story: health_8
+  steps:
+  - user: |
+      What are the increasing mental health issues in youth?
+    intent: digital_health
+  - action: utter_digital_health
+
+- story: health_9
+  steps:
+  - user: |
+      What are eye care tips?
+    intent: vision_care
+  - action: utter_vision_care
+
+- story: health_10
+  steps:
+  - user: |
+      What are the most important women's health screening?
+    intent: women_health
+  - action: utter_women_health
+
+- story: health_11
+  steps:
+  - user: |
+      Food myths and facts
+    intent: nutrition_myths
+  - action: utter_nutrition_myths
+
+- story: health_12
+  steps:
+  - user: |
+      What are the best aging gracefully tips?
+    intent: aging_gracefully
+  - action: utter_aging_gracefully
 
 - story: body_1
   steps:
@@ -60,7 +171,6 @@ stories:
       Is there anything I can eat or do to help relieve a cold?
     intent: common cold prevention
   - action: utter_common cold prevention
-  - action: utter_end_advice
 
 - story: body_2
   steps:
@@ -72,7 +182,6 @@ stories:
       I need a medicine to reduce fever
     intent: fever_prevention
   - action: utter_fever_prevention
-  - action: utter_end_advice
 
 - story: body_3
   steps:
@@ -84,7 +193,6 @@ stories:
       Can you give me some methods or medicine to reduce diabetes?
     intent: diabetes_prevention
   - action: utter_diabetes_prevention
-  - action: utter_end_advice
 
 - story: body_4
   steps:
@@ -96,7 +204,6 @@ stories:
       How can I get rid of depression?
     intent: depression_prevention
   - action: utter_depression_prevention
-  - action: utter_end_advice
 
 - story: body_5
   steps:
@@ -108,7 +215,6 @@ stories:
       Is there any way to cure asthma?
     intent: asthma_prevention
   - action: utter_asthma_prevention
-  - action: utter_end_advice
 
 - story: body_6
   steps:
@@ -120,7 +226,6 @@ stories:
       I need vegetarian tips to help me lose weight faster 
     intent: nutrition_advice
   - action: utter_nutrition_advice
-  - action: utter_end_advice
 
 - story: body_7
   steps:
@@ -132,13 +237,13 @@ stories:
       I need to schedule a word consultation to alleviate stress
     intent: appointment
   - action: utter_appointment
-  - action: utter_end_advice
 
 - story: body_8
   steps:
   - user: |
       Can you tell me the pregnancy symptoms?
     intent: pregnancy
+
   - action: utter_pregnancy
   - user: |
       Tell me the best parenting tips?
@@ -152,7 +257,6 @@ stories:
       Can you tell me the details of my health insurance policy for childbirth?
     intent: insurance
   - action: utter_insurance
-  - action: utter_end_advice
 
 - story: body_9
   steps:
@@ -168,7 +272,6 @@ stories:
       I still don't understand food labels, can you help me?
     intent: nutrition_labels
   - action: utter_nutrition_labels
-  - action: utter_end_advice
 
 - story: body_10
   steps:
@@ -180,4 +283,3 @@ stories:
       Can you come up with ways to improve sleep quality?
     intent: sleep_health
   - action: utter_sleep_health
-  - action: utter_end_advice
